@@ -1,6 +1,6 @@
 # ls1
 
-ls1 is unix ls inspired handy utility for computing total sizes of subdirectories and files of given path 1 level deep written in Python 3.
+ls1 is a handy utility inspired by unix 'ls' for computing total sizes of subdirectories and files of given path 1 level deep written in Python 3.
 ls1 allows you to quickly identify large directories while being much simpler to use than 'du -h'. ls1 also allows sorting output.
 
 ### Installation
