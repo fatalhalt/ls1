@@ -36,7 +36,10 @@ def humanize_bytes(bytes, precision=1):
 def get_dir_size(path):
     dirSize = 0
     for dirName, subdirList, fileList in os.walk(path):
-        dirSize += sum(os.path.getsize(os.path.join(dirName, name)) for name in fileList)
+        try:
+            dirSize += sum(os.path.getsize(os.path.join(dirName, name)) for name in fileList)
+        except OSError:
+            pass
     return dirSize
 
 
